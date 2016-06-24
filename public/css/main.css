@@ -1,0 +1,23 @@
+h1 {
+    text-align: center;
+    font: sans-serif;
+}
+.instruct-search {
+    color: red;
+    text-align: center;
+}
+.instruct-latest {
+    color: green;
+    text-align: center;
+}
+.example {
+    text-align: center;
+    font-family: cursive;
+}
+.latest {
+    text-align: center;
+    font-family: fantasy;
+}
+hr {
+    width: 75%;
+}
