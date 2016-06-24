@@ -26,7 +26,7 @@ module.exports = function (app, db) {
 				if (err) throw err;
 				var data = JSON.parse(body);
 				for (var i = 0; i < 10; i++) {
-					urls.push(data.items[i].pagemap.imageobject[0].url);
+					urls.push([data.items[i].pagemap.imageobject[0].url, data.items[i].title]);
 				}
 				res.send(JSON.stringify(urls));
 				addToDB(db, req.params.QUERY);
